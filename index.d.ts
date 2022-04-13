@@ -24,11 +24,25 @@ declare module 'react-native-applovin-max' {
     DOES_NOT_APPLY = 2,
   }
 
-  type AdEventInfo =
-    | 'OnBannerAdLoadedEvent'
-    | 'OnBannerAdClickedEvent'
-    | 'OnBannerAdExpandedEvent'
-    | 'OnBannerAdCollapsedEvent'
+	type AdEventInfo =
+		| "OnBannerAdLoadedEvent"
+		| "OnBannerAdClickedEvent"
+		| "OnBannerAdExpandedEvent"
+		| "OnBannerAdCollapsedEvent"
+		| "OnInterstitialLoadedEvent"
+		| "OnInterstitialLoadFailedEvent"
+		| "OnInterstitialClickedEvent"
+		| "OnInterstitialDisplayedEvent"
+		| "OnInterstitialAdFailedToDisplayEvent"
+		| "OnInterstitialHiddenEvent"
+		| "OnRewardedAdLoadedEvent"
+		| "OnRewardedAdLoadFailedEvent"
+		| "OnRewardedAdClickedEvent"
+		| "OnRewardedAdDisplayedEvent"
+		| "OnRewardedAdFailedToDisplayEvent"
+		| "OnRewardedAdHiddenEvent"
+		| "OnRewardedAdReceivedRewardEvent";
+
   export type AdInfo = {
     adUnitId: string
     creativeId: string
