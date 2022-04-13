@@ -152,7 +152,7 @@ declare module 'react-native-applovin-max' {
     /* INTERSTITIALS */
     /*---------------*/
     loadInterstitial: (adUnitId: string) => void
-    isInterstitialReady: (adUnitId: string) => void
+    isInterstitialReady: (adUnitId: string) => boolean
     showInterstitial: (adUnitId: string, placement) => void
     setInterstitialExtraParameter: (adUnitId: string, key, value) => void
 
@@ -160,7 +160,7 @@ declare module 'react-native-applovin-max' {
     /* REWARDED */
     /*----------*/
     loadRewardedAd: (adUnitId: string) => void
-    isRewardedAdReady: (adUnitId: string) => void
+    isRewardedAdReady: (adUnitId: string) => boolean
     showRewardedAd: (adUnitId: string, placement) => void
     setRewardedAdExtraParameter: (adUnitId: string, key, value) => void
   }
